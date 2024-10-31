@@ -1,9 +1,13 @@
 import './App.css';
 import Navbar from './Navbar'
+import Generator from './Generator';
 
 function App() {
   return (
-    <Navbar></Navbar>
+    <div>
+      <Navbar></Navbar>
+      <Generator></Generator>
+    </div>
   );
 }
 
