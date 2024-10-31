@@ -71,7 +71,7 @@ function Generator() {
                         <FaQuestion className="text-gray-500 ml-2 mr-2" />
                         <input
                             type="text"
-                            placeholder="Type here"
+                            placeholder="Enter Question Name"
                             className="w-full border-none outline-none"
                             value={text}
                             onChange={(e) => setText(e.target.value)}
