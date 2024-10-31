@@ -32,7 +32,7 @@ function Generator() {
 
                 const titleX = canvas.width / 2;
                 const titleY = canvas.height / 2 - 200;
-                ctx.fillText(platform, titleX, titleY);
+                ctx.fillText(`${platform} coding question solution`, titleX, titleY);
 
                 ctx.fillStyle = "#FFFFFF";
                 ctx.font = "100px monospace";
@@ -59,8 +59,13 @@ function Generator() {
     const handlePlatformChange = (e) => {
         const selectedPlatform = e.target.value;
         setPlatform(selectedPlatform);
-        setText(selectedPlatform);
+    
+        // Set text only if it’s currently empty
+        if (!text) {
+            setText(selectedPlatform);
+        }
     };
+    
 
     return (
         <div className="flex flex-col items-center justify-start w-full pt-4">
