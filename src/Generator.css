@@ -1,0 +1,32 @@
+/* Dark theme background */
+.bg-dark-theme {
+  background-color: #121212;
+}
+
+/* Title text styling */
+.title-text {
+  color: #e1bee7;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Neon text animation for "Effortlessly" */
+@keyframes neon {
+  0%,
+  100% {
+    color: #39ff14;
+  }
+  25% {
+    color: #0affff;
+  }
+  50% {
+    color: #ff00ff;
+  }
+  75% {
+    color: #ff5e00;
+  }
+}
+
+.animated-neon {
+  animation: neon 2s infinite;
+}
